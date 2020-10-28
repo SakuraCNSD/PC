@@ -1,0 +1,224 @@
+.container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  .content {
+    display: flex;
+    justify-content: center;
+    .leftImg {
+      width: 720px;
+      height: 692px;
+      margin: 325px 0 0 166px;
+      transition: all 0.3s linear;
+    }
+    .explainContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 329px 68px 0;
+      position: relative;
+      transition: all 0.3s linear;
+      .explainImg {
+        width: 652px;
+        height: 424px;
+      }
+      .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 280px;
+        height: 64px;
+        background: #0054ff;
+        font-size: 24px;
+        line-height: 36px;
+        color: #fff;
+        font-weight: 400;
+        font-family: SourceHanSansCN-Normal, SourceHanSansCN;
+        cursor: pointer;
+        margin-top: 87px;
+        transition: all 0.5s linear;
+        position: relative;
+        .mask {
+          position: absolute;
+          background: url(~@/assets/Image/vague.png) no-repeat;
+          background-position: -55px -50px;
+          width: 240px;
+          height: 63px;
+          left: 50%;
+          top: 16px;
+          padding: 0 20px;
+          transform: translateX(-50%);
+          opacity: 0.3;
+        }
+        .title {
+          position: absolute;
+          z-index: 100;
+        }
+      }
+    }
+    .rightImg {
+      width: 640px;
+      height: 691px;
+      margin: 325px 246px 0 0;
+      transition: all 0.3s linear;
+    }
+  }
+  .footer {
+    width: 100%;
+    height: 28px;
+    position: relative;
+    overflow: hidden;
+    margin: 173.63px 0 123.26px 0;
+    transition: all 0.3s linear;
+    .arrowTop {
+      width: 20px;
+      height: 28x;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: 1s all linear;
+      animation: toggle 1s linear infinite;
+    }
+  }
+}
+@keyframes toggle {
+  0% {
+    bottom: -40px;
+  }
+  50% {
+    bottom: -20px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 2048px) {
+  .container {
+    .content {
+      .leftImg {
+        width: 576px;
+        height: 553.6px;
+        margin: 150px 0 0 132.8px;
+      }
+      .explainContainer {
+        margin: 154px 54.4px 0;
+        .explainImg {
+          width: 521.6px;
+          height: 339.2px;
+        }
+        .btn {
+          width: 224px;
+          height: 51.2;
+          margin-top: 80px;
+          font-size: 19.2px;
+          line-height: 28.8px;
+          .mask {
+            width: 192px;
+            height: 50.4px;
+            top: 12.8px;
+          }
+        }
+      }
+      .rightImg {
+        width: 512px;
+        height: 552.8px;
+        margin: 150px 196.8px 0 0;
+      }
+    }
+    .footer {
+      height: 22.4px;
+      margin: 100px 0 113.6px 0;
+      .arrowTop {
+        width: 16px;
+        height: 22.4x;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1920px) {
+  .container {
+    .content {
+      .leftImg {
+        width: 540px;
+        height: 519px;
+        margin: 140.625px 0 0 124.5px;
+      }
+      .explainContainer {
+        margin: 144.375px 51px 0;
+        .explainImg {
+          width: 489px;
+          height: 318px;
+        }
+        .btn {
+          width: 210px;
+          height: 48px;
+          margin-top: 75px;
+          font-size: 18px;
+          line-height: 27px;
+          .mask {
+            width: 180px;
+            height: 47.25px;
+            top: 12px;
+          }
+        }
+      }
+      .rightImg {
+        width: 480px;
+        height: 518.25px;
+        margin: 140.625px 184.5px 0 0;
+      }
+    }
+    .footer {
+      height: 21px;
+      margin: 93.75px 0 106.5px 0;
+      .arrowTop {
+        width: 15px;
+        height: 21x;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1680px) {
+  .container {
+    .content {
+      .leftImg {
+        width: 472.5px;
+        height: 454.125px;
+        margin: 123px 0 0 109px;
+      }
+      .explainContainer {
+        margin: 126.32px 44.625px 0;
+        .explainImg {
+          width: 427.875px;
+          height: 278.25px;
+        }
+        .btn {
+          width: 183.75px;
+          height: 42px;
+          margin-top: 65.625px;
+          font-size: 15.75px;
+          line-height: 23.625px;
+          .mask {
+            width: 157.5px;
+            height: 41.35px;
+            top: 10.5px;
+          }
+        }
+      }
+      .rightImg {
+        width: 420px;
+        height: 453.5px;
+        margin: 123px 161.4px 0 0;
+      }
+    }
+    .footer {
+      height: 18px;
+      margin: 82px 0 93.2px 0;
+      .arrowTop {
+        width: 13px;
+        height: 18.375x;
+      }
+    }
+  }
+}
